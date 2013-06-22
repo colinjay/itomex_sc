@@ -4,22 +4,75 @@
 $this->pageTitle=Yii::app()->name;
 ?>
 
-<?php $this->beginWidget('bootstrap.widgets.TbHeroUnit',array(
-    'heading'=>'Welcome to '.CHtml::encode(Yii::app()->name),
-)); ?>
+<div class="page-header" style="  border-bottom: 1px solid #D6D6D6;">
+<p><img alt="File:Logo WWU Münster.svg" src="/itomex_sc/images/Logo_WWU_Münster.svg" width="300" height="90" /><img alt="" src="/itomex_sc/images/itomex_logo.png"></p>
+<h1><small>All information is directly reported to the NSA!</small></h1>
 
-<p>Congratulations! You have successfully created your Yii application.</p>
+</div>
 
-<?php $this->endWidget(); ?>
 
-<p>You may change the content of this page by modifying the following two files:</p>
+<style type="text/css">
 
-<ul>
-    <li>View file: <code><?php echo __FILE__; ?></code></li>
-    <li>Layout file: <code><?php echo $this->getLayoutFile('main'); ?></code></li>
-</ul>
+/* Example 1 */
 
-<p>For more details on how to further develop this application, please read
-    the <a href="http://www.yiiframework.com/doc/">documentation</a>.
-    Feel free to ask in the <a href="http://www.yiiframework.com/forum/">forum</a>,
-    should you have any questions.</p>
+#example-1 .simple-example {
+  
+  /* Old Syntax */
+  display: -webkit-box;
+  display: -moz-box;
+
+  /* New Syntax */
+  display: -webkit-flexbox;
+}
+
+#example-1 .simple-example > div {
+  margin-right: 5px;
+  margin-bottom: 5px;
+  width: 300px;
+  height:100px;
+  padding: 6px;
+  -webkit-border-radius: 3px;
+  /*background-color: #3A87AD;*/
+  color:white;
+}
+#contentwrapper2{
+float: left;
+width: 100%;
+}
+
+#contentcolumn2{
+ /*Set left margin to LeftColumnWidth*/
+width: 20%;
+float: right;
+
+
+}
+
+#leftcolumn{
+float: left;
+width: 60%; /*Width of left column*/
+margin-left: 0px; /*Set left margin to -(MainContainerWidth)*/
+}
+
+</style>
+<div id="contentwrapper2">
+<div id="leftcolumn">
+<article class="example" id="example-1">
+  <section class="simple-example">
+    <div style="background-color: #00A0B1">E-Mail and Messaging</div>
+    <div style="background-color: #2E8DEF">Network</div>
+    <div style="background-color: #A700AE">Machine Care</div> 
+  </section>
+  <section class="simple-example">
+    <div style="background-color: #643EBF">Collaboration</div>
+    <div style="background-color: #BF1E4B">Desktop Services</div>
+    <div style="background-color: #DC572E">Computational Performance</div>
+      </section>
+</article> 
+</div>
+<div id="contentcolumn2">
+<div style="background-color: #0A5BC4; height:300px; color:white">Services from A to Z</div> 
+
+</div>
+</div>
+

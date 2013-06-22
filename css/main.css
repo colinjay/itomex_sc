@@ -1,4 +1,4 @@
-body
+﻿body
 {
 	margin: 0;
 	padding: 0;
@@ -19,7 +19,7 @@ body
 {
 	margin: 0;
 	padding: 0;
-	border-top: 3px solid #C9E0ED;
+	border-top: 1px solid #C9E0ED;
 }
 
 #content
@@ -227,3 +227,4 @@ div.search-form
 {
 	background: #80CFFF;
 }
+
