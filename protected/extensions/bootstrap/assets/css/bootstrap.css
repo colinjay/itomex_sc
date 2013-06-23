@@ -3480,11 +3480,10 @@ input[type="button"].btn-block {
 
 .btn-inverse:active,
 .btn-inverse.active {
-  background-color: #080808 \9;
+  background-color: #080808;
 }
 
-button.btn,
-input[type="submit"].btn {
+button.btn, input[type=submit].btn {
   *padding-top: 3px;
   *padding-bottom: 3px;
 }

@@ -1,0 +1,44 @@
+﻿/* Example 1 */
+
+#example-1 .simple-example {
+  
+  /* Old Syntax */
+  display: -webkit-box;
+  display: -moz-box;
+
+  /* New Syntax */
+  display: -webkit-flexbox;
+}
+
+#example-1 .simple-example > div {
+  margin-right: 5px;
+  margin-bottom: 5px;
+  width: 250px;
+  height:90px;
+  padding: 6px;
+  -webkit-border-radius: 3px;
+  /*background-color: #3A87AD;*/
+  color:white;
+  text-align: center;
+}
+#example-1 .simple-example > img {
+
+  }
+#contentwrapper2{
+float: left;
+width: 100%;
+}
+
+#contentcolumn2{
+ /*Set left margin to LeftColumnWidth*/
+width: 20%;
+float: right;
+margin-right: 100px;
+
+}
+
+#leftcolumn{
+float: left;
+width: 60%; /*Width of left column*/
+margin-left: 0px; /*Set left margin to -(MainContainerWidth)*/
+}

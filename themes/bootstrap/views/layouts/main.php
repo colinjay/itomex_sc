@@ -13,46 +13,25 @@
 </head>
 
 <body style="background-color:#EDEDF0;">
+<link href="<?php echo Yii::app()->theme->baseUrl; ?>/css/bodystyles.css" rel="stylesheet" type="text/css">
 
-<?php $this->widget('bootstrap.widgets.TbNavbar', array(
-    'type'=>'inverse', // null or 'inverse'
-    'brand'=>'Project name',
-    'brandUrl'=>'#',
-    'collapse'=>true, // requires bootstrap-responsive.css
+<?php $this->widget('bootstrap.widgets.TbNavbar',array(
     'items'=>array(
         array(
             'class'=>'bootstrap.widgets.TbMenu',
             'items'=>array(
-                array('label'=>'Home', 'url'=>'#', 'active'=>true),
-                array('label'=>'Link', 'url'=>'#'),
-                array('label'=>'Dropdown', 'url'=>'#', 'items'=>array(
-                    array('label'=>'Action', 'url'=>'#'),
-                    array('label'=>'Another action', 'url'=>'#'),
-                    array('label'=>'Something else here', 'url'=>'#'),
-                    '---',
-                    array('label'=>'NAV HEADER'),
-                    array('label'=>'Separated link', 'url'=>'#'),
-                    array('label'=>'One more separated link', 'url'=>'#'),
-                )),
+                array('label'=>'Home', 'url'=>array('/site/index')),
+                array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
+                array('label'=>'Contact', 'url'=>array('/site/contact')),
+                array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+                array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
             ),
         ),
-        '<form class="navbar-search pull-left" action=""><input type="text" class="search-query span2" placeholder="Search"></form>',
-        array(
-            'class'=>'bootstrap.widgets.TbMenu',
-            'htmlOptions'=>array('class'=>'pull-right'),
-            'items'=>array(
-                array('label'=>'Link', 'url'=>'#'),
-                array('label'=>'Dropdown', 'url'=>'#', 'items'=>array(
-                    array('label'=>'Action', 'url'=>'#'),
-                    array('label'=>'Another action', 'url'=>'#'),
-                    array('label'=>'Something else here', 'url'=>'#'),
-                    '---',
-                    array('label'=>'Separated link', 'url'=>'#'),
-                )),
-            ),
-        ),
+                '<form class="navbar-search pull-left" action=""><input type="text" class="search-query span2" placeholder="Search"></form>',
+
     ),
 )); ?>
+
 <div class="container" id="page">
 
 	<?php if(isset($this->breadcrumbs)):?>
