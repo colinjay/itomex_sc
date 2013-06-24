@@ -6,7 +6,7 @@
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
 
-Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
+//Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
 
 
 return array(
@@ -17,7 +17,7 @@ return array(
 	// preloading 'log' component
 	'preload'=>array('log'),
 	
-	'theme'=>'bootstrap', // requires you to copy the theme under your themes directory
+	'theme'=>'cosmo', // requires you to copy the theme under your themes directory
 
 	// autoloading model and component classes
 	'import'=>array(
