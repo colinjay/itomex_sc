@@ -1,0 +1,51 @@
+.logo{
+	height:70px;
+	width:auto;
+}
+.logo2{
+	float:right;
+	height:70px;
+	width:auto;
+}
+.clear{
+	clear:both;
+	height:20px;
+}
+.box1{
+	background-color:#00A0B1;
+	text-align:center;
+	padding-bottom:10px;
+}
+.box2{
+	background-color:#2E8DEF;
+	text-align:center;
+	padding-bottom:10px;
+}
+.box3{
+	background-color:#A700AE;
+	text-align:center;
+	padding-bottom:10px;
+}
+.box4{
+	background-color:#643EBF;
+	text-align:center;
+	padding-bottom:10px;
+}
+.box5{
+	background-color:#BF1E4B;
+	text-align:center;
+	padding-bottom:10px;
+}
+.box6{
+	background-color:#DC572E;
+	text-align:center;
+	padding-bottom:10px;
+}
+.box1 h4, .box2 h4, .box3 h4, .box4 h4, .box5 h4, .box6 h4{
+	color:#FFF;
+	margin-bottom:0;
+}
+.box1 img, .box2 img, .box3 img, .box4 img, .box5 img, .box6 img{
+	width:auto;
+	height:120px;
+}
