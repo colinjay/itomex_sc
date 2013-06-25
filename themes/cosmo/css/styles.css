@@ -49,3 +49,14 @@
 	width:auto;
 	height:120px;
 }
+.box1 a:hover, .box2 a:hover, .box3 a:hover, .box4 a:hover, .box5 a:hover, .box6 a:hover{
+	text-decoration:none;
+}
+.footer{
+	background-color:#CFCFCF;
+	padding-left:10px;
+	padding-right:10px;
+}
+.footer .right{
+	float:right;
+}
